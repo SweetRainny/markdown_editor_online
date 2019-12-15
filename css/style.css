@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+ul, ol {
+    /*list-style: none;*/
+}
+
+.clear {
+    *zoom: 1;           /* for IE 6/7 */
+}
+
+.clear:before, .clear:after {
+    height: 0; 
+    content: "";
+    font-size: 0;
+    display: table;
+    line-height: 0;     /* for Opera */
+    visibility: hidden;
+}
+
+.clear:after {
+    clear: both;
+}
+
+body {
+    font-size: 14px;
+    color: #666;
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif; 
+    background: #fff;
+    text-align: center;
+    height:100%;
+}
+
+#layout {
+    text-align: left;
+}
+
+#layout > header, .btns {
+    padding: 15px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btns {
+    padding-top: 0;
+}
+
+.btns button {
+    padding: 2px 8px;
+}
+
+#layout > header > h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.btns button, .btn {
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: background 300ms ease-out;
+    transition: background 300ms ease-out;
+}
+
+.btns button:hover, .btn:hover {
+    background: #f6f6f6;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+
+}
+#layout > header{
+    padding:15px 20px;
+    background:#f3f3f3;
+}
+header h1{
+    float:left;
+}
+header div.save{
+    float:right;
+    padding: 5px 15px;
+    text-align:center;
+    background:#00b7e3;
+    color:#fff;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    position:relative;
+}
+header div.save:hover{
+    background:#10a7cb;
+}
+#layout .editormd-toolbar{
+    background:#e0e0e0;
+}
+#layout .editormd-menu>li a{
+    border:1px solid #e0e0e0;
+}
+header .save i{
+    position:absolute;
+    width:5px;
+    height:5px;
+    background:#e42f39;
+    border-radius:50%;
+    right:5px;
+    top:5px;
+    display:none;
+}
+#layout .tip{
+    position:fixed;
+    width:260px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    color:#fff;
+    bottom:30px;
+    left:50%;
+    margin-left:-130px;
+    z-index:1000;
+    background:rgba(0,0,0,0.6);
+    font-size:20px;
+    border-radius:10px;
+    display:none;
+}
+
